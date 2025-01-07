@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "villagerprofessionsplus:block/netherography_table_bottom",
+    "east": "villagerprofessionsplus:block/netherography_table_side3",
+    "north": "villagerprofessionsplus:block/netherography_table_side3",
+    "particle": "villagerprofessionsplus:block/netherography_table_side3",
+    "south": "villagerprofessionsplus:block/netherography_table_side1",
+    "up": "villagerprofessionsplus:block/netherography_table_top",
+    "west": "villagerprofessionsplus:block/netherography_table_side2"
+  }
+}
+
