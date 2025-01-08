@@ -1,5 +1,7 @@
 {
   "block.villagerprofessionsplus.netherography_table_block": "Netherography Table",
 
+  "entity.minecraft.villager.netherographer": "Netherographer",
+
   "itemgroup.ruby": "Ruby Tutorial Group"
 }

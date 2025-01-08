@@ -4,6 +4,8 @@ import net.fabricmc.api.ModInitializer;
 
 import net.kylelaverty.villagerprofessionsplus.block.ModBlocks;
 import net.kylelaverty.villagerprofessionsplus.util.VPPReference;
+import net.kylelaverty.villagerprofessionsplus.villager.ModJobs;
+import net.kylelaverty.villagerprofessionsplus.villager.ModVillagers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,5 +17,7 @@ public class VillagerProfessionsPlusMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		ModBlocks.registerModBlocks();
+		ModVillagers.registerVillagers();
+		ModJobs.registerTrades();
 	}
 }
