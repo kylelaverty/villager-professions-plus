@@ -12,7 +12,6 @@ env:
   VERSION: mc1.20.1-0.0.1-alpha-fabric
   VERSION_TYPE: alpha
   RELEASE_NAME: 0.0.1 (alpha) for Fabric 1.20.1
-  MODRINTH_ID: 3PvMllHL
   MODRINTH_TOKEN: ${{ secrets.PUBLISH_MODRINTH_TOKEN }}
   GITHUB_TOKEN: ${{ secrets.PUBLISH_GITHUB_TOKEN }}
 
@@ -55,7 +54,6 @@ jobs:
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          modrinth-id: "${{env.MODRINTH_ID}}"
           modrinth-token: "${{env.MODRINTH_TOKEN}}"
           github-token: "${{env.GITHUB_TOKEN}}"
           github-tag: "v${{env.VERSION}}"
