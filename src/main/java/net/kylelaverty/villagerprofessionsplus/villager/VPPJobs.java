@@ -70,8 +70,8 @@ public class VPPJobs {
                 VPPVillagers.NETHEROGRAPHER,
                 TradeLevel.MASTER,
                 factories -> {
-                    factories.add(new ItemToEmeraldOffer(new ItemStack(Items.RESPAWN_ANCHOR, 1), 64, 2, 30, 0.02f));
-                    factories.add(new ItemToEmeraldOffer(new ItemStack(Items.GILDED_BLACKSTONE, 1), 64, 2, 30, 0.02f));
+                    factories.add(new EmeraldToItemOffer(new ItemStack(Items.RESPAWN_ANCHOR, 1), 64, 2, 30, 0.02f));
+                    factories.add(new EmeraldToItemOffer(new ItemStack(Items.GILDED_BLACKSTONE, 1), 64, 2, 30, 0.02f));
                 }
         );
     }
