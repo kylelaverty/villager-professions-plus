@@ -1,22 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "pattern": [
+    "##",
+    "GG",
+    "WW"
+  ],
   "key": {
     "#": {
-      "tag": "minecraft:planks"
-    },
-    "@": {
       "item": "minecraft:paper"
     },
     "G": {
       "item": "minecraft:gilded_blackstone"
+    },
+    "W": {
+      "item": "minecraft:warped_planks"
     }
   },
-  "pattern": [
-    "@@",
-    "GG",
-    "##"
-  ],
   "result": {
     "item": "villagerprofessionsplus:netherography_table_block"
   },
