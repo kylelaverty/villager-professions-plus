@@ -3,7 +3,7 @@ package net.kylelaverty.villagerprofessionsplus.villager;
 import com.google.common.collect.ImmutableSet;
 import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
 import net.kylelaverty.villagerprofessionsplus.VillagerProfessionsPlusMod;
-import net.kylelaverty.villagerprofessionsplus.block.ModBlocks;
+import net.kylelaverty.villagerprofessionsplus.block.VPPBlocks;
 import net.kylelaverty.villagerprofessionsplus.util.VPPReference;
 import net.minecraft.block.Block;
 import net.minecraft.registry.Registries;
@@ -16,11 +16,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.village.VillagerProfession;
 import net.minecraft.world.poi.PointOfInterestType;
 
-public class ModVillagers {
+public class VPPVillagers {
 
     public static final String NETHEROGRAPHER_POI_ID = "netherographerpoi";
     public static final RegistryKey<PointOfInterestType> NETHEROGRAPHER_POI_KEY = poiKey(NETHEROGRAPHER_POI_ID);
-    public static final PointOfInterestType NETHEROGRAPHER_POI = registerPoi(NETHEROGRAPHER_POI_ID, ModBlocks.NETHEROGRAPHY_TABLE_BLOCK);
+    public static final PointOfInterestType NETHEROGRAPHER_POI = registerPoi(NETHEROGRAPHER_POI_ID, VPPBlocks.NETHEROGRAPHY_TABLE_BLOCK);
 
     public static final VillagerProfession NETHEROGRAPHER = registerProfession("netherographer", NETHEROGRAPHER_POI_KEY, SoundEvents.ENTITY_VILLAGER_WORK_CARTOGRAPHER);
 
@@ -45,6 +45,6 @@ public class ModVillagers {
     }
 
     public static void registerVillagers(){
-        VillagerProfessionsPlusMod.LOGGER.info("Registering Villagers " + VPPReference.MOD_ID);
+        VillagerProfessionsPlusMod.LOGGER.info("Registering Villagers for " + VPPReference.MOD_ID);
     }
 }

@@ -2,10 +2,10 @@ package net.kylelaverty.villagerprofessionsplus;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.kylelaverty.villagerprofessionsplus.block.ModBlocks;
+import net.kylelaverty.villagerprofessionsplus.block.VPPBlocks;
 import net.kylelaverty.villagerprofessionsplus.util.VPPReference;
-import net.kylelaverty.villagerprofessionsplus.villager.ModJobs;
-import net.kylelaverty.villagerprofessionsplus.villager.ModVillagers;
+import net.kylelaverty.villagerprofessionsplus.villager.VPPJobs;
+import net.kylelaverty.villagerprofessionsplus.villager.VPPVillagers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,10 +14,8 @@ public class VillagerProfessionsPlusMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
-
-		ModBlocks.registerModBlocks();
-		ModVillagers.registerVillagers();
-		ModJobs.registerTrades();
+		VPPBlocks.registerModBlocks();
+		VPPVillagers.registerVillagers();
+		VPPJobs.registerTrades();
 	}
 }

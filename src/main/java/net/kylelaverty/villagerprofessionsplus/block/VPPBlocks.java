@@ -16,7 +16,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
-public class ModBlocks {
+public class VPPBlocks {
     public static final Block NETHEROGRAPHY_TABLE_BLOCK = registerBlock("netherography_table_block",
             new Block(FabricBlockSettings.copyOf(Blocks.CARTOGRAPHY_TABLE).sounds(BlockSoundGroup.GILDED_BLACKSTONE)));
 
@@ -35,8 +35,8 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        VillagerProfessionsPlusMod.LOGGER.info("Registering ModBlocks for " + VPPReference.MOD_ID);
+        VillagerProfessionsPlusMod.LOGGER.info("Registering Blocks for " + VPPReference.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModBlocks::addBlocksToItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(VPPBlocks::addBlocksToItemGroup);
     }
 }

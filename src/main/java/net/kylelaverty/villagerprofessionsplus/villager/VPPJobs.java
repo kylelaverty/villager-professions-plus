@@ -1,6 +1,8 @@
 package net.kylelaverty.villagerprofessionsplus.villager;
 
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
+import net.kylelaverty.villagerprofessionsplus.VillagerProfessionsPlusMod;
+import net.kylelaverty.villagerprofessionsplus.util.VPPReference;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -8,11 +10,11 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.TradeOffers;
 
-public class ModJobs {
+public class VPPJobs {
 
     private static void registerNetherographerJobs(){
         TradeOfferHelper.registerVillagerOffers(
-                ModVillagers.NETHEROGRAPHER,
+                VPPVillagers.NETHEROGRAPHER,
                 TradeLevel.NOVICE,
                 factories -> {
                     factories.add(new EmeraldToItemOffer(new ItemStack(Items.WARPED_FUNGUS, 4), 1, 12, 1, 0.2f));
@@ -27,7 +29,7 @@ public class ModJobs {
         );
 
         TradeOfferHelper.registerVillagerOffers(
-                ModVillagers.NETHEROGRAPHER,
+                VPPVillagers.NETHEROGRAPHER,
                 TradeLevel.APPRENTICE,
                 factories -> {
                     factories.add(new EmeraldToItemOffer(new ItemStack(Items.BASALT, 1), 1, 16, 5, 0.2f));
@@ -40,7 +42,7 @@ public class ModJobs {
         );
 
         TradeOfferHelper.registerVillagerOffers(
-                ModVillagers.NETHEROGRAPHER,
+                VPPVillagers.NETHEROGRAPHER,
                 TradeLevel.JOURNEYMAN,
                 factories -> {
                     factories.add(new EmeraldToItemOffer(new ItemStack(Items.SHROOMLIGHT, 1), 1, 12, 10, 0.2f));
@@ -53,7 +55,7 @@ public class ModJobs {
         );
 
         TradeOfferHelper.registerVillagerOffers(
-                ModVillagers.NETHEROGRAPHER,
+                VPPVillagers.NETHEROGRAPHER,
                 TradeLevel.EXPERT,
                 factories -> {
                     factories.add(new EmeraldToItemOffer(new ItemStack(Items.CRYING_OBSIDIAN, 1), 2, 12, 15, 0.2f));
@@ -65,7 +67,7 @@ public class ModJobs {
         );
 
         TradeOfferHelper.registerVillagerOffers(
-                ModVillagers.NETHEROGRAPHER,
+                VPPVillagers.NETHEROGRAPHER,
                 TradeLevel.MASTER,
                 factories -> {
                     factories.add(new ItemToEmeraldOffer(new ItemStack(Items.RESPAWN_ANCHOR, 1), 64, 2, 30, 0.02f));
@@ -139,6 +141,8 @@ public class ModJobs {
     }
 
     public static void registerTrades(){
+        VillagerProfessionsPlusMod.LOGGER.info("Registering Jobs for " + VPPReference.MOD_ID);
+
         registerNetherographerJobs();
     }
 }
