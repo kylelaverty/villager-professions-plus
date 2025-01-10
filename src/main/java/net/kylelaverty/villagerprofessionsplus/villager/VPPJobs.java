@@ -50,7 +50,7 @@ public class VPPJobs {
                     factories.add(new ItemToEmeraldOffer(new ItemStack(Items.SOUL_CAMPFIRE, 4), 6, 12, 10, 0.02f));
                     factories.add(new ItemToEmeraldOffer(new ItemStack(Items.DIAMOND_PICKAXE, 1), 10, 12, 10, 0.02f));
                     factories.add(new ItemToEmeraldOffer(new ItemStack(Items.DIAMOND_SHOVEL, 1), 10, 12, 10, 0.02f));
-                    factories.add(new ItemToEmeraldOffer(new ItemStack(Items.WARPED_FUNGUS_ON_A_STICK, 1), 15, 6, 10, 0.02f));
+                    factories.add(new ItemToEmeraldOffer(new ItemStack(Items.WARPED_FUNGUS_ON_A_STICK, 1), 12, 6, 10, 0.02f));
                 }
         );
 
@@ -70,8 +70,8 @@ public class VPPJobs {
                 VPPVillagers.NETHEROGRAPHER,
                 TradeLevel.MASTER,
                 factories -> {
-                    factories.add(new EmeraldToItemOffer(new ItemStack(Items.RESPAWN_ANCHOR, 1), 64, 2, 30, 0.02f));
-                    factories.add(new EmeraldToItemOffer(new ItemStack(Items.GILDED_BLACKSTONE, 1), 64, 2, 30, 0.02f));
+                    factories.add(new EmeraldToItemOffer(new ItemStack(Items.RESPAWN_ANCHOR, 1), 32, 2, 30, 0.02f));
+                    factories.add(new EmeraldToItemOffer(new ItemStack(Items.GILDED_BLACKSTONE, 1), 16, 12, 20, 0.02f));
                 }
         );
     }

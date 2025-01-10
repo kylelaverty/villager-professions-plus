@@ -18,6 +18,8 @@ The Netherographer is a profession that specializes in the study of the Nether. 
 
 ## Trades
 
+Anything listed as buy means that the villager will buy that item from the player. Anything listed as sell means that the villager will sell that item to the player.
+
 | Profession     | Level      | Type | Item                     | Amount | Price      |
 | -------------- | ---------- | ---- | ------------------------ | ------ | ---------- |
 | Netherographer | Novice     | Buy  | Bread                    | 4      | 1 Emerald  |
@@ -37,7 +39,7 @@ The Netherographer is a profession that specializes in the study of the Nether. 
 | Netherographer | Journeyman | Buy  | Soul Campfire            | 4      | 6 Emerald  |
 | Netherographer | Journeyman | Buy  | Diamond Pickaxe          | 1      | 10 Emerald |
 | Netherographer | Journeyman | Buy  | Diamond Shovel           | 1      | 10 Emerald |
-| Netherographer | Journeyman | Buy  | Warped Fungus On A Stick | 1      | 15 Emerald |
+| Netherographer | Journeyman | Buy  | Warped Fungus On A Stick | 1      | 12 Emerald |
 | Netherographer | Journeyman | Sell | Shroomlight              | 1      | 1 Emerald  |
 | Netherographer | Journeyman | Sell | Glowstone                | 1      | 2 Emerald  |
 | Netherographer | Expert     | Sell | Crying Obsidian          | 1      | 2 Emerald  |
@@ -45,8 +47,8 @@ The Netherographer is a profession that specializes in the study of the Nether. 
 | Netherographer | Expert     | Sell | Soul Sand                | 1      | 2 Emerald  |
 | Netherographer | Expert     | Sell | Soul Soil                | 1      | 2 Emerald  |
 | Netherographer | Expert     | Sell | Raw Gold                 | 1      | 4 Emerald  |
-| Netherographer | Master     | Sell | Respawn Anchor           | 1      | 64 Emerald |
-| Netherographer | Master     | Sell | Gilded Blackstone        | 1      | 64 Emerald |
+| Netherographer | Master     | Sell | Respawn Anchor           | 1      | 32 Emerald |
+| Netherographer | Master     | Sell | Gilded Blackstone        | 1      | 16 Emerald |
 
 ## Updating the mod
 
